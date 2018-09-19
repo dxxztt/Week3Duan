@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <CheckBox
+        android:id="@+id/goods_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/goods_title"
+
+         />
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="100dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/goods_img"
+        android:layout_height="150dp" />
+    <TextView
+
+        android:id="@+id/goods_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/goods_img"
+        android:maxLines="2"
+        android:text="标题" />
+    <TextView
+
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:layout_toRightOf="@+id/goods_img"
+        android:text="价格" />
+        <com.example.lenovo.week3duan.frgm.AddDeleteView
+            android:id="@+id/goods_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/goods_price"></com.example.lenovo.week3duan.frgm.AddDeleteView>
+</RelativeLayout>
